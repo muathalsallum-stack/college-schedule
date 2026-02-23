@@ -70,7 +70,7 @@ html += `
 كل عام وأنتم بخير
 </div>
 
-<div class="print-btn no-print">
+<div class="no-print" style="text-align:center;margin-top:10px;">
 <button onclick="window.print()">🖨 طباعة / حفظ PDF</button>
 </div>
 `;
