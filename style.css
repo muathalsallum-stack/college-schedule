@@ -1,0 +1,145 @@
+
+body {
+font-family: Tahoma;
+background: linear-gradient(135deg,#e8f5e9,#ffffff);
+margin:0;
+padding:20px;
+}
+
+.page {
+background:white;
+max-width:800px;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.header { text-align:center; }
+
+.title {
+background:#1f5e3b;
+color:white;
+display:inline-block;
+padding:10px 25px;
+border-radius:8px;
+margin-top:10px;
+font-size:18px;
+}
+
+.semester {
+background:#e6f4ea;
+display:inline-block;
+padding:6px 15px;
+border-radius:20px;
+margin-top:8px;
+font-size:14px;
+color:#1f5e3b;
+}
+
+.search-section { text-align:center; margin:20px 0; }
+
+input {
+padding:8px;
+width:220px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button {
+padding:8px 16px;
+background:#1f5e3b;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.info-table {
+width:100%;
+border-collapse:collapse;
+font-size:13px;
+margin-top:15px;
+}
+
+.info-table td {
+border:1px solid #ccc;
+padding:6px;
+background:#f9f9f9;
+}
+
+.day-box {
+border:2px solid #1f5e3b;
+border-radius:8px;
+padding:8px;
+margin-top:10px;
+background:#f1f8f4;
+page-break-inside: avoid;
+}
+
+.day-title {
+background:#1f5e3b;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+display:inline-block;
+margin-bottom:8px;
+font-size:13px;
+}
+
+.schedule-table {
+width:100%;
+border-collapse:collapse;
+font-size:12px;
+}
+
+.schedule-table th {
+background:#2e7d32;
+color:white;
+padding:5px;
+}
+
+.schedule-table td {
+border:1px solid #ccc;
+padding:5px;
+background:white;
+}
+
+.trainer-name {
+margin-top:15px;
+padding:8px;
+background:#e8f5e9;
+border:1px solid #a5d6a7;
+text-align:center;
+font-size:13px;
+}
+
+.footer-note {
+margin-top:10px;
+padding:6px;
+background:#fff8e1;
+border:1px solid #e0c97f;
+text-align:center;
+font-size:11px;
+}
+
+.print-btn { margin-top:10px; text-align:center; }
+
+@media print {
+
+@page { size:A4; margin:5mm; }
+
+body { background:white; padding:0; }
+
+.no-print { display:none; }
+
+.page {
+box-shadow:none;
+padding:0;
+transform: scale(0.92);
+transform-origin: top center;
+}
+
+body, table { font-size:11px; }
+
+}
